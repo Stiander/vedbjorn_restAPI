@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+
+  restapi:
+    build:
+      context: ./
+    ports:
+      - "8080:8080"
+    networks:
+      - bridged
+    environment:
+      - DEBUGGING=true
+      - REACT_APP_JWT_SECRET=KKJALDFV23HK34#1__%&%DFLGJ2345VCLKLNKZCVLK
+
+networks:
+  bridged:
+    driver: bridge
+
+volumes:
+  vedbjorn-rest:
+

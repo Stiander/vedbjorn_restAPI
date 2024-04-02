@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "77faeaa5-5f55-4e74-8270-092ac25a8020",
+		"name": "VEDBJØRN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "736328"
+	},
+	"item": [
+		{
+			"name": "ADDRESS FROM COORDINATES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/addrfromcoords?lat=59.397427&lng=10.399391",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addrfromcoords"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.397427"
+						},
+						{
+							"key": "lng",
+							"value": "10.399391"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOCATION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/location?lat=59.397427&lng=10.399391",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"location"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.397427"
+						},
+						{
+							"key": "lng",
+							"value": "10.399391"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"stian@broentech.no\" ,\r\n    \"firstname\" : \"Stian\" ,\r\n    \"lastname\" : \"Broen\" ,\r\n    \"location_name\" : \"59.397427,10.399391\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUY_REQUEST",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"current_requirement\" : 3,\r\n    \"reserved_weeks\" : -1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/buyrequest?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"buyrequest"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUY_REQUEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/buyrequest?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"buyrequest"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUY_REQUEST",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/buyrequest?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"buyrequest"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SELL_REQUEST",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"current_capacity\" : 150\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/sellrequest?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sellrequest"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SELL_REQUEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/sellrequest?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sellrequest"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SELL_REQUEST",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/sellrequest?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sellrequest"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DRIVE_REQUEST",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"available\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/driverequest?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"driverequest"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DRIVE_REQUEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/driverequest?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"driverequest"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DRIVE_REQUEST",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/driverequest?email=stian@broentech.no",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"driverequest"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "stian@broentech.no"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

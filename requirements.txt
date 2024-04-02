@@ -1,0 +1,14 @@
+pymongo[srv]
+PyJWT==2.4.0
+fastapi==0.79.0
+uvicorn==0.18.2
+grpcio
+protobuf
+google
+google-auth
+python-multipart
+opencv-python
+Pillow
+pytz
+cryptography==36.0.1
+requests==2.27.1
